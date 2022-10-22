@@ -1,0 +1,466 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+  --dark-color: #001F3F;
+  --light-color: #083358;
+  --blue-cyan: #0D63A5;
+  --blue-opacity: #0d63a510;
+  --yellow-color: #FFD717;
+}
+body{
+  font-family: Raleway, Sans-Serif;
+
+}
+.home{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.l-home{
+    width: 50%;
+    height: 100vh;
+   /* padding: 20rem 0rem; */
+}
+.l-home h3{
+    color: var(--dark-color);
+    /* padding-top: 10px; */
+     padding: 1rem 6rem;
+    font-size: 2.7rem;
+    font-weight: 800;
+}
+.l-home p{
+    padding-top:17rem;
+    font-size: larger;
+    font-weight: 400;
+    color: var(--dark-color);
+}
+.l-home button{
+    width: 10rem;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 40px;
+    color: var(--yellow-color);
+    border: 2px solid var(--yellow-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+#btn-wd{
+    margin-right: 10px;
+    font-size: 14px;
+
+}
+#btn-tfr{
+    margin-left: 10px;
+    background-color: var(--yellow-color);
+    color: white;
+    font-size: 14px;
+}
+.r-home{
+    width: 50%;
+    height: 100vh;
+background-image: url('https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+.navbar{
+    width: 100%;
+    height: 4.5rem;
+    padding: 0 4rem;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.navbar ul{
+  background-color: white;
+  border: 3px solid var(--yellow-color);
+  border-radius: 30px;
+    width: 48rem;
+    /* height: 4.5rem; */
+    padding:2rem 1.2rem;
+    display: flex;
+    align-items: center;
+    padding-left: 5rem;
+    gap: 2.5rem;
+}
+.navbar img.logo{
+  width: 100px;
+  height: 100px;
+  transform: scale(1.7);
+}
+.navbar ul li{
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+.navbar ul button{
+    width: 20rem;
+    padding: 10px;
+    border-radius: 50px;
+    border: 0px;
+    background-color: var(--yellow-color);
+    color: white;
+    font-size: 14px;
+}
+
+/* Page stylecss */
+
+.main-card{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(246, 236, 223);
+    position: relative;
+}
+.fly-card {
+  width: 28rem;
+  height: 18rem;
+  background-color:white;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  border-radius: 16px;
+}
+.fly-card img{
+  width: 28rem;
+  height: 18rem;
+}
+.fly-card1{
+  top: -50px;
+  left: 20rem;
+}
+.fly-card2{
+  top: 90px;
+  left: 32rem;
+  z-index: 10;
+}
+
+.fly-card3{
+  top: 240px;
+  left: 44rem;
+}
+
+.fly-card:hover{
+  animation: example 1s linear infinite alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes example {
+    0% {
+     transform: translateX(30px) ;
+    }
+    
+    100% {
+     transform: translateX(-30px) ;
+    }
+  }
+
+.team{
+    background-color: var(--dark-color);
+    border-top-left-radius: 20px;
+    clip-path: polygon(0 100px,50% 0,100% 100px,100% 100%,0 100%);
+    top: 79rem;
+    margin-top: -6rem;
+  }
+.team h1{
+    padding-top: 8rem;
+    color: white;
+  }
+  .team p{
+    color: white;
+    padding: 30px 25rem;
+  }
+  
+  /* Aproach Style.. */
+  .approach{
+    width: 100%;
+    padding: 4rem 0;
+    background-color: var(--blue-opacity);              ;
+  }
+ 
+
+  .approach-main{
+    margin: 2rem auto ;
+    width: 68%;
+  }
+  .aproach-box{
+    width: 36rem;
+    height: 12rem;
+    border-radius: 20px;
+    background-color: var(--yellow-color);
+    color: white;
+    position: relative;
+    margin: 6rem 0;
+    z-index: 1;
+    /* overflow: hidden; */
+  }
+  .approach h1{
+    color: var(--blue-cyan);
+  }
+  .approach-r{
+    margin-left: 100%;
+    transform: translateX(-100%);
+    background-color: var(--light-color);
+    animation: 2s linear 10s infinite showing;
+
+  }
+  .aproach-box-upper{
+    width: 14rem;
+    height: 120%;
+    border-radius: 20px;
+    background-color: rgb(245, 247, 247);
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    transform: translateY(-50%);
+    overflow: hidden;
+  }
+  .aproach-box-upper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .aproach-box .levelHeading{
+    font-size: 5rem;
+    color: white;
+    opacity: 0.15;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+  }
+  .aproach-box .levelHeading-r{
+    left: 20px;
+    right: auto;
+  }
+  .aproach-box .box-upper-r{
+    right: 2rem;
+    left: auto;
+  }
+  .aproach-box .text-box{
+    margin-left: 16rem;
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  .aproach-box .text-box-r{
+    margin-right: 16rem;
+    padding: 1.5rem;
+    margin-left: auto;
+    color: white;
+  }
+  .aproach-box .text-box h2, .aproach-box .text-box p{
+    margin: 4px 0;
+  }
+  .aproach-box .text-box h2{
+    font-size: 16px;
+  }
+  .aproach-box .text-box p{
+    font-size: 12px;
+  }
+  .approach-center{
+    z-index: 1;
+  }
+  .approach-r{
+    z-index: 2;
+  }
+  .approach-center .stroke{
+    position: absolute;
+    top: -100%;
+    z-index: 0;
+  }
+  .approach-center .stroke path{
+    stroke-dasharray: 408px;
+    stroke-dashoffset: 408px;
+    animation: 2s ease 0s infinite forwards stroke;
+  }
+  .stroke-bottom{
+    position: absolute;
+    transform: scaleY(-1) translateY(-200%);
+
+
+  }
+  @keyframes stroke{
+    to{
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes showing{
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+
+  /* .approach-center::before,
+  .approach-center::after{
+    content: "";
+    height: 12rem;
+    width: 3px;
+    background-color: var(--blue-cyan);
+    position: absolute;
+    top:-100%;
+    right: 35%;
+    animation:  fill-6 5s infinite alternate, colors 5s infinite alternate;
+  }
+  .approach-center{
+    animation:  fill-6 5s infinite alternate, colors 5s infinite alternate;
+
+  }
+  
+  @keyframes approach-center {
+    0%   { width: 0; }
+    33%  { width: 90px;}
+    66%  { width: 70px;}
+    100% { width: 136px; }
+  }
+  .approach-center::after{
+    top: 100%;
+  }
+
+.approach-nc::before{
+  content: "";
+  background-color: var(--blue-cyan);
+  position: absolute;
+  height: 3px;
+  width: 5.2rem;
+  z-index: 0 !important;
+  left: -14.5%;
+  top: 50%;
+  
+} */
+
+
+
+
+  /* Footer Style.., */
+
+  .footer{
+    width: 100%;
+    height: 40vh;
+    background-color: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4rem;
+  }
+.foot-1 ,.foot-2,.foot-3{
+  width: 33%;
+} 
+.foot-1 img{
+  width: 40%;
+  padding-bottom: 4.5rem;
+}
+  .foot-1 h1, .foot-2 h1, .foot-3 h1{
+    color: var(--yellow-color);
+    padding-bottom: 20PX;
+
+  }
+  .foot-1 p, .foot-2 p, .foot-3 p{
+  color: white;
+  }
+
+
+
+
+  /* RegardinTeam */
+  .regard-team{
+    width: 100%;
+    height: 35rem;
+    padding: 4rem ;
+    background-color: var(--dark-color);
+    display: flex;
+    justify-content: center;
+  }
+  .regardingteam, .technicalteam{
+    width: 24rem;
+    height: 100%;
+    display: inline-block;
+    border: solid 1px;
+    background-color: white;
+    border-color: rgba(232,230,230,0.8);
+    padding: 30px 10px;
+    margin: 0 24px;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    
+  }
+  .regardingteam h2, .technicalteam h2{
+    margin-bottom: 24px;
+    font-size: 1.8rem;
+    text-align: left;
+    padding: 0 20px;
+  }
+
+  .regardingteam ul, .technicalteam ul{
+    margin: 0 2rem;
+    text-align: left;
+    z-index: 10;
+    font-weight: 500;
+    
+  }
+  .regardingteam ul li, .technicalteam ul li{
+    margin-bottom: 6px;
+  }
+
+.regard-team .stylingCircle{
+  background-color: var(--yellow-color);
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: absolute;
+  /* margin-bottom: -50%; */
+  bottom: -8%;
+  right: -16%;
+  z-index: 1;
+}
+
+/* Mobil */
+.mobile{
+  width: 100%;
+  color:var(--blue-cyan);
+  /* background-color: var(--yellow-color); */
+  margin-top: 2rem;
+}
+.mobile h2{
+  padding-top: 2rem;
+  color:var(--blue-cyan);
+  font-size: 2rem;
+}
+.mobile p{
+  padding: 1rem 0;
+  color: #0D63A5;
+}
+.mobile img{
+  width: 70%;
+  height: 40rem;
+}
+
+/* Development */
+.regard{
+  width: 100%;
+  margin-top: 4rem;
+  background-color: #001F3F;
+}
+
+.regard h1{
+  padding-top: 2rem;
+  color: var(--yellow-color);
+}
+.regardingteam h3 , .technicalteam h3{
+  font-weight: 400;
+  z-index: 100;
+}
+
+.rgdteam{
+  height: 22rem;
+}
