@@ -25,6 +25,7 @@ body{
    /* padding: 20rem 0rem; */
 }
 .l-home h3{
+  
     color: var(--dark-color);
     /* padding-top: 10px; */
      padding: 1rem 6rem;
@@ -464,3 +465,109 @@ background-image: url('https://images.pexels.com/photos/3184398/pexels-photo-318
 .rgdteam{
   height: 22rem;
 }
+
+
+
+/* recurtment */
+.recurtment{
+  width: 100%;
+padding : 20px;
+overflow: hidden;
+}
+.recurtment h1{
+  padding: 3rem;
+  color: #0D63A5;
+  padding-bottom: 0.8rem;
+}
+.recurtment h3{
+  color: #0D63A5;
+  padding-bottom: 3rem;
+}
+.main-recurtment{
+  width: 100%;
+  display: flex;
+}
+.img-recute{
+  width: 50%;
+}
+.img-recute img{
+  width:100%
+}
+.process-recute{
+  width: 50%;
+}
+
+.step-recurte{
+  width: 90%;
+  display: flex;
+  background-color:#104a7c;
+  box-shadow: 0 0 0.8px;
+  margin: 1rem 1rem;
+  border-radius: 10px;
+
+  
+}
+  .step-recurte iconify-icon{
+    font-size: 4rem;
+    color: #FFD717;
+  }
+.process-data{
+  width: 50rem;
+  /* background-color: #0D63A5; */
+  height: 4rem;
+}
+.process-data p{
+  font-size: 18px;
+  padding: 12px 10px;
+  font-weight: 400;
+  color: white;
+}
+
+
+
+  @keyframes example {
+    0%   { margin-left: 110%}
+    100% {margin-left: 0;}
+    
+  }
+  .planing{
+    animation: 3s example ;
+    width: 100%;
+    /* transform: translateX(0); */
+
+  }
+.sourcing{
+    width: 100%;
+    animation: 3s example;
+
+  /* transform: translateX(120%); */
+
+}
+
+.filtering{
+  /* transform: translateX(120%); */
+  animation: 3s example;
+
+  width: 100%;
+
+
+
+}
+.outcome{
+    width: 100%;
+    animation: 3s example;
+
+  /* transform: translateX(120%); */
+
+}
+.feedback{
+    width: 100%;
+    animation: 3s example;
+
+  /* transform: translateX(120%); */
+
+}
+.process-recute h2{
+  /* width: 4rem; */
+  background-color: transparent;
+color: tomato;}

@@ -23,10 +23,10 @@ export default function Landing() {
         <ul>
             <li><span>Home</span></li>
             <li><span>Product</span></li>
-            <li><span>Solution</span></li>
-            <li><span>Pricing</span></li>
-            <li><span>Resources</span></li>
-            <button>Login</button>
+            <li><span>About</span></li>
+            <li><span>Contact Us</span></li>
+            {/* <li><span>Resources</span></li> */}
+            {/* <button>Login</button> */}
         </ul>
     </div>
     </>
